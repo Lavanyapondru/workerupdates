@@ -68,9 +68,9 @@ function ViewWorkers() {
               <th>Name</th>
               <th>Phone</th>
               <th>Location</th>
-              <th>Workingdate</th>
-              <th>Employeetype</th>
-              <th>Projectname</th>
+              <th>Working Date</th>
+              <th>Employee Type</th>
+              <th>Project Name</th>
               <th>Salary</th>
               <th>Actions</th>
               
@@ -80,7 +80,7 @@ function ViewWorkers() {
   {employees.map((emp) => (
     <tr key={emp.id}>
       <td>{emp.id}</td>
-      <td>{emp.name}</td> {/* match form field */}
+      <td>{emp.employeename}</td> {/* match form field */}
       <td>{emp.phone ? `+91 ${emp.phone}` : `${emp.phone}`}</td>
       <td>{emp.location}</td>
       <td>{new Date(emp.workingdate).toLocaleDateString("en-GB")}</td>
